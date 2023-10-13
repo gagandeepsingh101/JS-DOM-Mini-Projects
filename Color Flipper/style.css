@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    z-index: 99;
+    width: 100%;
+    padding: 1% 10%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.353);
+}
+#navbar h1{
+    font-size: 30px;
+    color: #49a6e9;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+}
+#navbar h1:hover{
+    scale: 1.1;
+}
+#main{
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
+    gap: 40px;
+}
+#main h1{
+    background-color: black;
+    color: white;
+    padding: 2% 10%;
+    border-radius: 20px;
+    font-size: 50px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+#main button{
+    background-color: transparent;
+    padding: 1% 2%;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 20px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+#main button:hover{
+    background-color: black;
+    color: white;
+}
+#main h1 span{
+    color: #49a6e9;   
+}
