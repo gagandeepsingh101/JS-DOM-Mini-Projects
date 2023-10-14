@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f2f2f2;
+}
+nav {
+  z-index: 99;
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.344);
+}
+ul {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-transform: capitalize;
+  color: black;
+  text-decoration: none;
+}
+
+.menu-btn {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+  }
+  .links {
+    z-index: -1;
+    display: none;
+    padding: 4px 20px;
+    overflow: hidden;
+    width: 100%;
+    background-color: white;
+    top: 10%;
+    left: 0%;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+  .links li {
+    position: relative;
+    padding: 5px;
+  }
+  .open-links li:hover {
+    padding: 5px;
+    color: white;
+    background-color: lightskyblue;
+
+}
+  .open-links li a {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+  }
+  .open-links li:hover a {
+    color: white;
+    position: relative;
+    padding-left: 20px;
+  }
+  .open-links {
+    /* animation: showNav 2s linear 0s 1 ;
+    -webkit-animation: showNav 2s linear 0s 1 ; */
+    display: flex;
+    height: 30%;
+}
+  .social-icons {
+    display: none;
+  }
+  img {
+    height: 60%;
+    width: 60%;
+  }
+  .menu-btn {
+    display: block;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+  }
+  .menu-btn-open {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+  }
+  .menu-btn i {
+    font-size: 20px;
+  }
+}
