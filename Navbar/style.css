@@ -38,35 +38,51 @@ a {
   }
   .links {
     z-index: -1;
-    display: none;
+    display: flex;
+    height: 30%;
     padding: 4px 20px;
     overflow: hidden;
     width: 100%;
     background-color: white;
-    top: 10%;
+    top: 9%;
     left: 0%;
     position: absolute;
     flex-direction: column;
     justify-content: space-evenly;
-
+    transition: all 1s ease;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
 }
   .links li {
     position: relative;
     padding: 5px;
   }
+  .open-links{
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+}
   .open-links li:hover {
     padding: 5px;
     color: white;
     background-color: lightskyblue;
-
-}
+  }
   .open-links li a {
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
-  }
+}
   .open-links li:hover a {
     color: white;
     position: relative;
