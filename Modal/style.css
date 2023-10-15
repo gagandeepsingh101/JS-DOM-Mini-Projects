@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  background: url(https://vanilla-js-basic-project-6-modal.netlify.app/hero.jpeg);
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-opener-sec {
+  width: 35%;
+  height: 23%;
+  background-color: white;
+  border-radius: 25px;
+  padding: 5% 8%;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal-opener-sec h1 {
+  color: #102a42;
+  text-transform: capitalize;
+  font-size: 80px;
+}
+.modal-opener {
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  background-color: #49a6e9;
+  border: 2px solid #49a6e9;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.modal-opener:hover {
+  background-color: white;
+  color: #49a6e9;
+}
+.modal-bg {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #49a6e956;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.modal-view {
+  position: absolute;
+  background: white;
+  width: 35%;
+  height: 15%;
+  background-color: white;
+  border-radius: 25px;
+  padding: 2% 3%;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+ 
+}
+
+.modal-view p {
+  transform: scale(1);
+  transition: all 0.5s linear;
+  font-size: 50px;
+  color: #bb2525;
+  font-weight: bolder;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+.modal-view p:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.modal-view h1 {
+  text-align: center;
+  width: 100%;
+}
+.modal-bg-view {
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .modal-opener-sec,.modal-view{
+        width: 70%;
+
+    }
+    .modal-view{
+        padding: 4% 0 ;
+        height: 21%;
+    }
+    .modal-opener-sec h1{
+        font-size: 30px;
+    }
+    .modal-view h1{
+        font-size: 25px;
+    }
+    .modal-view p{
+        padding: 0 10%;
+    }
+    .modal-view p i{
+        font-size: 30px;
+    }
+}
