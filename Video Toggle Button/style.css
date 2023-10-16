@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    position: relative;
+  overflow: hidden;
+}
+
+.pre-loader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.pre-loader video{
+  height: 50px ;
+  height: 100px;
+}
+.video-container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.648);
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+}
+.video-container h1{
+    z-index: 99;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%) ;
+    color: white;
+    font-size: 50px;
+    -webkit-transform: translate(-50%,-50%) ;
+    -moz-transform: translate(-50%,-50%) ;
+    -ms-transform: translate(-50%,-50%) ;
+    -o-transform: translate(-50%,-50%) ;
+}
+.video-controller {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  height: fit-content;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.video-controller button{
+    position: relative;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: flex ;
+    gap: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+}
+.switch{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: lightblue;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.slider{
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+}
