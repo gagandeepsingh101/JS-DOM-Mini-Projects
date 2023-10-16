@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    height: 100vh;
+}
+h1{
+    font-size: 50px;
+    color: #C59D5F;
+    font-family: 'Great Vibes', cursive;
+}
+.gen-ques{
+    width: 35%;
+    padding: 20px 20px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.questions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.questions h5{
+    font-size: 20px;
+}
+.questions .hide-answer{
+    color: #C59D5F;
+    font-size: 30px;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+}
+.questions .hide-answer:hover{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.answer{
+    display: none;
+}
+.answer hr{
+    margin: 10px 0;
+}
+.showAnswer{
+    flex-direction: column;
+    display: flex;
+}
