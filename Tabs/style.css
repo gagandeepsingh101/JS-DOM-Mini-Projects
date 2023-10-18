@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+h1{
+    font-size: 50px;
+}
+.main-area{
+    margin-top: 40px;
+    display: flex;
+    width: 80vw;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+p{
+    color: gray;
+}
+.main-area>img{
+    width: 40%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.tab-area{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    gap: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+}
+.tab-links{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    text-align: center;
+}
+.tab-links li{
+    padding: 10px 0 ;
+    width: 100%;
+}
+.tab-hover:hover a{
+    color: #49a6e9;
+}
+.tab-hover:hover{
+    background-color: #49a6e92d;
+}
+.tab-links>li>a{
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+.content{
+    display: none;
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 10px;
+}
+.content h4{
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.content p{
+    color: grey;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+.active-content{
+    display: flex;
+}
+.active-tab{
+    background-color: #DAE2EC;
+}
+@media only screen and (max-width: 768px){
+    p{
+        margin: 0 10px;
+        text-align: center;
+    }
+    .main-area{
+        margin-top: 0;
+        height: fit-content;
+        width: 90vw;
+        align-items: center;
+        flex-direction: column;
+        height: 80%;
+    }
+    .main-area img{
+        width: 90%;
+        height: 40%;
+    }
+    .tab-area{
+        height: 45%;
+        width: 90%;
+    } .content p{
+        text-align: justify;
+    }
+}
