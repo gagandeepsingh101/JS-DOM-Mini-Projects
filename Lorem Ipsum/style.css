@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f1f5f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+form {
+  display: flex;
+  width: 70vw;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+form label {
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+form input[type="number"]{
+  font-size: 20px;
+  border-radius: 20px;
+  width: fit-content;
+  border: none;
+  padding: 10px 20px;
+  width: 7%;
+  text-align: center;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #49a6e9;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+form button:hover{
+    color: #1a6aa2;
+    background-color: #49a6e997;
+}
+.paragraph-list::-webkit-scrollbar {
+  display: none;
+}
+.paragraph-list {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 70vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.paragraph-list h1 {
+    font-size: 20px;
+    text-align: center;
+}
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 20px;
+    }
+    form label{
+        letter-spacing: 0;
+    }
+    form{
+        width: 100%;
+    }
+    form input[type="number"]{
+        padding: 5px 10px;
+        width: 20%;
+    }
+    form button{
+        font-size: 13px;
+    }
+    .paragraph-list{
+        width: 90vw;
+        font-size: 14px;
+    }
+}
