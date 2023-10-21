@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.images{
+    overflow: hidden;
+    position: relative;
+    height: 70vh;
+    width: 70vw;
+    border: 4px solid #49A6E9;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.images::-webkit-scrollbar{
+    display: none;
+}
+.slide{
+    position: absolute;
+    width: 100%;
+    border-radius: 16.5px;
+    -webkit-border-radius: 16.5px;
+    -moz-border-radius: 16.5px;
+    -ms-border-radius: 16.5px;
+    -o-border-radius: 16.5px;
+    background-size: cover;
+    background-position: center ;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+#slider-1{
+    left: 0;
+    background-image: url(https://vannilla-js-basic-project-15-slider.netlify.app/img-1.jpeg) ;
+}
+#slider-2{
+    left: 100%;
+    background-image: url(https://th.bing.com/th/id/OIP.HxV79tFMPfBAIo0BBF-sOgHaEy?pid=ImgDet&rs=1) ;
+}
+#slider-3{
+    left: 200%;
+    background-image: url(https://vannilla-js-basic-project-15-slider.netlify.app/img-1.jpeg) ;
+}
+#slider-4{
+    left: 300%;
+    background-image: url(https://th.bing.com/th/id/OIP.HxV79tFMPfBAIo0BBF-sOgHaEy?pid=ImgDet&rs=1) ;
+}
+
+#navigation{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#next-btn , #prev-btn{
+    font-size: 20px;
+    border: none;
+    background: transparent;
+}
+#next-btn:hover,#prev-btn:hover{
+    color: gray;
+}
